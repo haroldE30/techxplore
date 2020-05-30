@@ -1,2 +1,3 @@
 /grocerybill-ui/target/*
 /grocerybill-ws/target/*
+/grocerybill-eureka-server/target/*
