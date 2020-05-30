@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="container">
-		<h1 ><span th:text="${clerk.name}"></span> - Grocery Bill</h1><br>
+		<h1 ><span th:text="${regularBill.clerk.name}"></span> - Grocery Bill</h1><br>
 		<div class="row col-md-7 table-responsive">
 			<table id="regularBill" class="table">
 				<thead>
@@ -68,6 +68,6 @@
 				</tfooter>
 			</table>
 		</div>
-		
+	</div>	
 </body>
 </html>

@@ -2,13 +2,8 @@ package com.acn.texchxplore.model;
 
 public class Item {
 
-	@Override
-	public String toString() {
-		return "Item [id=" + id + ", name=" + name + ", price=" + price + ", isDiscounted=" + isDiscounted
-				+ ", discountPercentage=" + discountPercentage + "]";
-	}
-
 	private Long id;
+	
 	private String name;
 
 	private double price;
@@ -16,15 +11,7 @@ public class Item {
 	private boolean isDiscounted;
 
 	private double discountPercentage;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
+	
 	public Item() {
 
 	}
@@ -36,6 +23,14 @@ public class Item {
 		this.isDiscounted = isDiscounted;
 		this.discountPercentage = discountPercentage;
 
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -76,5 +71,11 @@ public class Item {
 	public void setDiscountPercentage(double discountPercentage) {
 		this.discountPercentage = discountPercentage;
 
+	}
+	
+	@Override
+	public String toString() {
+		return "Item [id=" + id + ", name=" + name + ", price=" + price + ", isDiscounted=" + isDiscounted
+				+ ", discountPercentage=" + discountPercentage + "]";
 	}
 }

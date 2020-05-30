@@ -5,21 +5,21 @@ import java.util.List;
 
 public class GroceryBill {
 
-	private List<Item> itemList = new ArrayList<Item>();
+	private List<Item> itemList = new ArrayList<>();
 	private ShoppingClerk clerk;
 	private double totalBill;
 
 	public GroceryBill() {
 
 	}
-
-	public void setClerk(ShoppingClerk clerk) {
-		this.clerk = clerk;
-	}
-
+	
 	public GroceryBill(ShoppingClerk clerk) {
 		this.clerk = clerk;
 
+	}
+
+	public void setClerk(ShoppingClerk clerk) {
+		this.clerk = clerk;
 	}
 
 	public ShoppingClerk getClerk() {
