@@ -39,4 +39,4 @@ Running the applications
 1. Open terminal and navigate to grocerybill-eureka-server directory and run: mvn spring-boot:run
 2. Open another terminal and navigate to grocerybill-ws directory and run: mvn spring-boot:run
 3. Open another terminal and navigate to grocerybill-ui directory and run: mvn spring-boot:run
-4. Open a browser and acceess http://localhost:7070/techxplore/grocery
+4. Open a browser and access http://localhost:7070/techxplore/grocery
