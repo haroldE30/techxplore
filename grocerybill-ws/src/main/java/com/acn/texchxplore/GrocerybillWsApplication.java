@@ -20,9 +20,9 @@ public class GrocerybillWsApplication {
 	
 	@Bean 
 	public CommandLineRunner loadData(ItemRepository itemRepository) {
-		return (args) -> {
+		return args -> {
 			
-			List<Item> itemList = new ArrayList<Item>();
+			List<Item> itemList = new ArrayList<>();
 
 			Item item1 = new Item("Panteen Shampoo", 25.00, false, 0.00);
 			Item item2 = new Item("Creamsilk Conditioner", 30.00, false, 0.00);
@@ -37,8 +37,6 @@ public class GrocerybillWsApplication {
 			itemList.add(item5);
 
 			itemRepository.saveAll(itemList);
-			
-
 		};
 	}
 

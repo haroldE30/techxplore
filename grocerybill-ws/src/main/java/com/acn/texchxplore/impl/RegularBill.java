@@ -11,20 +11,13 @@ public class RegularBill extends GroceryBill {
 
 	public RegularBill(ShoppingClerk clerk) {
 		super(clerk);
-
 	}
 
 	@Override
 	public double getTotalBill() {
-
-		double total = 0;
-
-		for (Item item : itemList) {
-			total += item.getPrice();
-		}
-
-		return total;
-
+		return itemList.stream()
+				.map(Item::getPrice)
+				.reduce(0.0, Double::sum);
 	}
 
 }

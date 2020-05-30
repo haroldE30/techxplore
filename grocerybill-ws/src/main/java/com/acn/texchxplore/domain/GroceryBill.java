@@ -8,7 +8,7 @@ import com.acn.texchxplore.entity.ShoppingClerk;
 
 public abstract class GroceryBill {
 
-	protected List<Item> itemList = new ArrayList<Item>();
+	protected List<Item> itemList = new ArrayList<>();
 	private ShoppingClerk clerk;
 
 	public GroceryBill() {
